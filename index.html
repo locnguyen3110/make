@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEB Creator with Theos</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1>Create .deb Package</h1>
+    <form id="debForm">
+        <label for="projectName">Project Name:</label>
+        <input type="text" id="projectName" name="projectName" required><br><br>
+
+        <label for="version">Version:</label>
+        <input type="text" id="version" name="version" required><br><br>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea><br><br>
+
+        <button type="submit">Create DEB</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
